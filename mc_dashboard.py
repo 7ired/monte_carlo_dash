@@ -53,8 +53,8 @@ end_date = dt.today()
 var, cvar, prices_matrix = monte_carlo_simulation(stock, T, sims, confidence_level)
 
 # Display results
-st.write(f"VaR at {confidence_level*100}% confidence level: {var:.2f}")
-st.write(f"CVaR: {cvar:.2f}")
+st.write(f"Value at Risk at {int(confidence_level*100)}% confidence level: {var:.2f}")
+st.write(f"Conditional Value at Risk: {cvar:.2f}")
 
 # Plot simulation results
 fig, ax = plt.subplots(figsize=(10,5), dpi=1000)
