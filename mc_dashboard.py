@@ -58,7 +58,7 @@ st.write(f"CVaR: {cvar:.2f}")
 
 # Plot simulation results
 fig, ax = plt.subplots(figsize=(10,5), dpi=1000)
-plt.style.use('seaborn-darkgrid')
+plt.style.use('seaborn-v0_8-dark')
 
 for i in range(prices_matrix.shape[1]):
     plt.plot(prices_matrix[:,i], alpha=0.8, linewidth=0.5)
